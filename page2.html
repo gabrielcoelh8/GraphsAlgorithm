@@ -9,43 +9,40 @@
   <link rel="stylesheet" href="estilo2.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
   <title>Sort</title>
 </head>
 
 <body>
   <!--botão menu-->
   <div>
-    <span id="btn-menu" class="material-symbols-outlined">menu</span>
+    <span id="btn-menu" class="show material-symbols-outlined">menu</span>
   </div>
 
   <!--sidebar-->
-  <div id="sidebar" class="">
+  <div id="sidebar" class="show">
     <div class="text-menu">
       <span>Algoritmos de Ordenação</span>
     </div>
 
-    <div class="option">
-      <span>Introdução</span>
-      <div class="button">
-        <span class="material-symbols-outlined">home</span>
-      </div>
-    </div>
-
     <div class="option-submenu">
       <div class="option">
-        <span>BubbleSort</span>
-        <div class="button expand">
+        <span class="label">Introdução</span>
+        <div class="button expand clicked">
           <span class="material-symbols-outlined">expand_more</span>
         </div>
       </div>
-      <div class="submenu">
+      <div class="submenu show">
         <ul>
           <li class="subitem">
-            <span>Tabela</span>
+            <span class="label">
+              <a href="page2.html">Tabela geral</a>
+            </span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
           <li class="subitem">
-            <span>Gráfico</span>
+            <span class="label">
+              <a href="index.html">Gráfico geral</a></span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
         </ul>
@@ -54,20 +51,19 @@
 
     <div class="option-submenu">
       <div class="option">
-        <span>InsertionSort</span>
+        <span class="label">BubbleSort</span>
         <div class="button expand">
           <span class="material-symbols-outlined">expand_more</span>
         </div>
       </div>
-
       <div class="submenu">
         <ul>
           <li class="subitem">
-            <span>Tabela</span>
+            <span class="label">Tabela</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
           <li class="subitem">
-            <span>Gráfico</span>
+            <span class="label">Gráfico</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
         </ul>
@@ -76,20 +72,19 @@
 
     <div class="option-submenu">
       <div class="option">
-        <span>MergeSort</span>
+        <span class="label">InsertionSort</span>
         <div class="button expand">
           <span class="material-symbols-outlined">expand_more</span>
         </div>
       </div>
-
       <div class="submenu">
         <ul>
           <li class="subitem">
-            <span>Tabela</span>
+            <span class="label">Tabela</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
           <li class="subitem">
-            <span>Gráfico</span>
+            <span class="label">Gráfico</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
         </ul>
@@ -98,20 +93,19 @@
 
     <div class="option-submenu">
       <div class="option">
-        <span>QuickSort</span>
+        <span class="label">MergeSort</span>
         <div class="button expand">
           <span class="material-symbols-outlined">expand_more</span>
         </div>
       </div>
-
       <div class="submenu">
         <ul>
           <li class="subitem">
-            <span>Tabela</span>
+            <span class="label">Tabela</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
           <li class="subitem">
-            <span>Gráfico</span>
+            <span class="label">Gráfico</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
         </ul>
@@ -120,20 +114,19 @@
 
     <div class="option-submenu">
       <div class="option">
-        <span>ShellSort</span>
+        <span class="label">QuickSort</span>
         <div class="button expand">
           <span class="material-symbols-outlined">expand_more</span>
         </div>
       </div>
-
       <div class="submenu">
         <ul>
           <li class="subitem">
-            <span>Tabela</span>
+            <span class="label">Tabela</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
           <li class="subitem">
-            <span>Gráfico</span>
+            <span class="label">Gráfico</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
         </ul>
@@ -142,20 +135,19 @@
 
     <div class="option-submenu">
       <div class="option">
-        <span>HeapSort</span>
+        <span class="label">ShellSort</span>
         <div class="button expand">
           <span class="material-symbols-outlined">expand_more</span>
         </div>
       </div>
-
       <div class="submenu">
         <ul>
           <li class="subitem">
-            <span>Tabela</span>
+            <span class="label">Tabela</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
           <li class="subitem">
-            <span>Gráfico</span>
+            <span class="label">Gráfico</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
         </ul>
@@ -164,20 +156,19 @@
 
     <div class="option-submenu">
       <div class="option">
-        <span>RadixSort</span>
+        <span class="label">HeapSort</span>
         <div class="button expand">
           <span class="material-symbols-outlined">expand_more</span>
         </div>
       </div>
-
       <div class="submenu">
         <ul>
           <li class="subitem">
-            <span>Tabela</span>
+            <span class="label">Tabela</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
           <li class="subitem">
-            <span>Gráfico</span>
+            <span class="label">Gráfico</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
         </ul>
@@ -186,20 +177,19 @@
 
     <div class="option-submenu">
       <div class="option">
-        <span>GnomeSort</span>
+        <span class="label">RadixSort</span>
         <div class="button expand">
           <span class="material-symbols-outlined">expand_more</span>
         </div>
       </div>
-
       <div class="submenu">
         <ul>
           <li class="subitem">
-            <span>Tabela</span>
+            <span class="label">Tabela</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
           <li class="subitem">
-            <span>Gráfico</span>
+            <span class="label">Gráfico</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
         </ul>
@@ -208,70 +198,145 @@
 
     <div class="option-submenu">
       <div class="option">
-        <span>CountingSort</span>
+        <span class="label">GnomeSort</span>
         <div class="button expand">
           <span class="material-symbols-outlined">expand_more</span>
         </div>
       </div>
-
       <div class="submenu">
         <ul>
           <li class="subitem">
-            <span>Tabela</span>
+            <span class="label">Tabela</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
           <li class="subitem">
-            <span>Gráfico</span>
+            <span class="label">Gráfico</span>
             <span class="material-symbols-outlined">dataset</span>
           </li>
         </ul>
       </div>
     </div>
+
+    <div class="option-submenu">
+      <div class="option">
+        <span class="label">CountingSort</span>
+        <div class="button expand">
+          <span class="material-symbols-outlined">expand_more</span>
+        </div>
+      </div>
+      <div class="submenu">
+        <ul>
+          <li class="subitem">
+            <span class="label">Tabela</span>
+            <span class="material-symbols-outlined">dataset</span>
+          </li>
+          <li class="subitem">
+            <span class="label">Gráfico</span>
+            <span class="material-symbols-outlined">dataset</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 
   <!--conteudo-->
-  
   <div class="container">
-    <div class="text">
-      <span>BubbleSort:</span>
+    <div class="buttons">
+      <button id="btn-melhor" class="button-5" role="button">Melhor caso</button>
+      <button id="btn-medio" class="button-5" role="button">Médio caso</button>
+      <button id="btn-pior" class="button-5" role="button">Pior caso</button>
     </div>
+
     <div class="table">
       <table>
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">1000</th>
-            <th scope="col">10000</th>
-            <th scope="col">50000</th>
-            <th scope="col">1000000</th>
+              <th scope="col">1000</th>
+              <th scope="col">10000</th>
+              <th scope="col">50000</th>
+              <th scope="col">1000000</th>
           </tr>
         </thead>
-        <tr>
-          <th scope="row">Melhor caso</th>
-          <td>0,000001</td>
-          <td>0,000417</td>
-          <td>0,00034</td>
-          <td>0,000964</td>
-        </tr>
-        <tr>
-          <th scope="row">Médio caso</th>
-          <td>0,006738</td>
-          <td>0,142355</td>
-          <td>512,679436</td>
-          <td>2388,123164</td>
-        </tr>
-        <tr>
-          <th scope="row">Pior caso</th>
-          <td>0,006474</td>
-          <td>0,042532</td>
-          <td>343,220966</td>
-          <td>1348,68849</td>
-        </tr>
+        <tbody>
+          <tr>
+            <th scope="row">BUBBLE SORT</th>
+            <td>0,000001</td>
+            <td>0,000417</td>
+            <td>0,00034</td>
+            <td>0,000964</td>
+          </tr>
+          <tr>
+            <th scope="row">SELECTION SORT</th>
+            <td>0,006738</td>
+            <td>0,142355</td>
+            <td>512,679436</td>
+            <td>2388,123164</td>
+          </tr>
+          <tr>
+            <th scope="row">INSERTION SORT</th>
+            <td>0,006474</td>
+            <td>0,042532</td>
+            <td>343,220966</td>
+            <td>1348,68849</td>
+          </tr>
+          <tr>
+            <th scope="row">MERGE SORT</th>
+            <td>0,006474</td>
+            <td>0,042532</td>
+            <td>343,220966</td>
+            <td>1348,68849</td>
+          </tr>
+          <tr>
+            <th scope="row">QUICK SORT</th>
+            <td>0,006474</td>
+            <td>0,042532</td>
+            <td>343,220966</td>
+            <td>1348,68849</td>
+          </tr>
+          <tr>
+            <th scope="row">SHELL SORT</th>
+            <td>0,006474</td>
+            <td>0,042532</td>
+            <td>343,220966</td>
+            <td>1348,68849</td>
+          </tr>
+          <tr>
+            <th scope="row">HEAP SORT</th>
+            <td>0,006474</td>
+            <td>0,042532</td>
+            <td>343,220966</td>
+            <td>1348,68849</td>
+          </tr>
+          <tr>
+            <th scope="row">RADIX SORT</th>
+            <td>0,006474</td>
+            <td>0,042532</td>
+            <td>343,220966</td>
+            <td>1348,68849</td>
+          </tr>
+          <tr>
+            <th scope="row">GNOME SORT</th>
+            <td>0,006474</td>
+            <td>0,042532</td>
+            <td>343,220966</td>
+            <td>1348,68849</td>
+          </tr>
+          <tr>
+            <th scope="row">COUNTING SORT</th>
+            <td>0,006474</td>
+            <td>0,042532</td>
+            <td>343,220966</td>
+            <td>1348,68849</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
 
   <script src="funcao.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </body>
 
 </html>
