@@ -10,7 +10,7 @@
   }
 
   body {
-      height: 100%;
+      height: 100vh;
       margin: 0;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -52,9 +52,6 @@
       top: 15px;
       cursor: pointer;
       transition: left 0.2s ease;
-  }
-
-  #btn-menu {
       height: fit-content;
       font-size: 28px;
   }
@@ -110,7 +107,7 @@
 
   .option {
       line-height: 3;
-      background-color: rgba(137, 43, 226, 0.637);
+      background-color: rgba(137, 43, 226, 0.459);
       border-radius: 15px;
       padding: 3px;
       margin: 3px;
@@ -120,7 +117,9 @@
       justify-content: space-around;
       cursor: default;
   }
-
+  .option:hover{
+       background-color: rgba(129, 20, 230, 0.904);
+  }
   .option span {
       margin: 3px;
   }
@@ -154,21 +153,25 @@
       cursor: default;
   }
 
-  .submenu li {
+  .subitem {
       line-height: 25px;
       font-size: 0.75em;
       font-weight: 700;
       background-color: #202020ab;
       margin: 2px;
       border-radius: 15px;
-  }
-
-  .subitem {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
       padding: 5px;
+      cursor: default;
+  }
+  .subitem:hover{
+     background-color: #202020;
+  }
+  .subitem span{
+    cursor: default;
   }
 
   ul {
@@ -180,6 +183,7 @@
   /*
   CONTAINER
   */
+  
   .chart {
     width: 85vh;
     height: 85vh;
@@ -188,7 +192,7 @@
   .container {
     width: 100%;
     height: 100%;
-
+    margin-right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,3 +265,51 @@
     transform: translateY(0);
   }
   
+  /*
+  LATERAL
+  */
+
+.lateral{
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.lateral  div{
+    margin: 8px;
+}
+#btn-lad {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: aliceblue;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: left 0.2s ease;
+    height: fit-content;
+    font-size: 28px;
+}
+#btn-lad:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#text-lad {
+    box-sizing: border-box;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.15);
+    height: inherit;
+    padding: 50px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+#text-lad img{
+    width: 100%;
+    margin: 15px;
+}

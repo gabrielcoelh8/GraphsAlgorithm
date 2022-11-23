@@ -25,45 +25,11 @@
 
   <!--conteudo-->
   <div class="container">
-    <div class="table">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-              <th scope="col">1000</th>
-              <th scope="col">10000</th>
-              <th scope="col">50000</th>
-              <th scope="col">1000000</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">MELHOR CASO</th>
-            <td>0,000001</td>
-            <td>0,000417</td>
-            <td>0,00034</td>
-            <td>0,000964</td>
-          </tr>
-          <tr>
-            <th scope="row">CASO MEDIO</th>
-            <td>0,006738</td>
-            <td>0,142355</td>
-            <td>512,679436</td>
-            <td>2388,123164</td>
-          </tr>
-          <tr>
-            <th scope="row">PIOR CASO</th>
-            <td>0,006474</td>
-            <td>0,042532</td>
-            <td>343,220966</td>
-            <td>1348,68849</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="chart">
+      <canvas id="chart"></canvas>
     </div>
   </div>
 
-  <!--box lateral-->
   <div class="lateral">
     <div id="btn-lad">
       <span class="material-symbols-outlined">
@@ -80,9 +46,10 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/funcao.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+  <script src="js/chart1.js"></script>
 </body>
 
 </html>
