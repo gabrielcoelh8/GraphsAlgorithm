@@ -210,7 +210,6 @@
   .button-5 {
     align-items: center;
     background-clip: padding-box;
-    background-color: rgba(137, 43, 226, 0.637);
     border: 1px solid transparent;
     border-radius: .95rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -234,6 +233,16 @@
     touch-action: manipulation;
     vertical-align: baseline;
     width: 9rem;
+  }
+
+  #btn-melhor{
+   background-color:#1077B3; 
+  }
+  #btn-medio{
+    background-color:#1496E0;
+  }
+  #btn-pior{
+    background-color: #094161;
   }
   
   .button-5:hover,
