@@ -313,3 +313,7 @@
     width: 100%;
     margin: 15px;
 }
+#ListaCasos{
+  list-style: circle;
+  padding-left: 30px;
+}

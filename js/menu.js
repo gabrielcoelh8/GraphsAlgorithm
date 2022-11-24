@@ -48,11 +48,11 @@ let element =
 <div class="submenu">
   <ul>
   <li class="subitem">
-    <span class="label"><a href="page3.html">Tabela</a></span>
+    <span class="label"><a href="Tabela_Bubble.html">Tabela</a></span>
     <span class="material-symbols-outlined">dataset</span>
   </li>
   <li class="subitem">
-    <span class="label"><a href="page4.html">Gráfico</a></span>
+    <span class="label"><a href="Grafico_Bubble.html">Gráfico</a></span>
     <span class="material-symbols-outlined">dataset</span>
   </li>
   </ul>
@@ -71,11 +71,11 @@ let element =
   <div class="submenu">
     <ul>
     <li class="subitem">
-      <span class="label"><a href="page3.html">Tabela</a></span>
+      <span class="label"><a href="Tabela_Insertion.html">Tabela</a></span>
       <span class="material-symbols-outlined">dataset</span>
     </li>
     <li class="subitem">
-      <span class="label"><a href="page4.html">Gráfico</a></span>
+      <span class="label"><a href="Grafico_Insertion.html">Gráfico</a></span>
       <span class="material-symbols-outlined">dataset</span>
     </li>
     </ul>
@@ -94,11 +94,11 @@ let element =
   <div class="submenu">
     <ul>
     <li class="subitem">
-      <span class="label"><a href="page3.html">Tabela</a></span>
+      <span class="label"><a href="Tabela_Merge.html">Tabela</a></span>
       <span class="material-symbols-outlined">dataset</span>
     </li>
     <li class="subitem">
-      <span class="label"><a href="page4.html">Gráfico</a></span>
+      <span class="label"><a href="Grafico_Merge.html">Gráfico</a></span>
       <span class="material-symbols-outlined">dataset</span>
     </li>
     </ul>

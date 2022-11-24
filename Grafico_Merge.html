@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="estilo2.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <title>Sort</title>
+</head>
+
+<body>
+  <!--botão menu-->
+  <div>
+    <span id="btn-menu" class="show material-symbols-outlined">close</span>
+  </div>
+
+  <!--sidebar-->
+  
+  <div class="menu"></div>
+
+  <!--conteudo-->
+  <div class="container">
+    <div class="chart">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+
+  <div class="lateral">
+    <div id="btn-lad">
+      <span class="material-symbols-outlined">
+        keyboard_double_arrow_right
+        </span>
+    </div>
+    <div id="text-lad">
+      <h2>MERGE SORT</h2>
+      <p>Sua ideia básica consiste em Dividir (o problema em vários subproblemas e resolver esses subproblemas através da recursividade) e Conquistar
+         (após todos os subproblemas terem sido resolvidos ocorre a conquista que é a união das resoluções dos subproblemas). 
+        Como o algoritmo Merge Sort usa a recursividade, há um alto consumo de memória e tempo de execução, tornando esta técnica não muito eficiente em alguns problemas.
+      </p>
+      <p>Depois disso, a função de mesclagem entra em ação e combina os arrays classificados em arrays maiores até que todo o array seja mesclado.</p>
+      <h3>Desvantagens</h3>
+      <p>• Utiliza funções recursivas;
+         • Gasto extra de memória. O algoritmo cria uma cópia do vetor para cada nível da chamada recursiva, totalizando um uso adicional de 
+         memória igual a {\displaystyle O(n\log n)}{\displaystyle O(n\log n)}
+      </p>
+      <p>O Melhor caso ocorre quando o array já está ordenado.</p>
+      <p>O pior caso da execução deste algoritmo manifesta-se quando a entrada está ordenada em ordem decrescente.</p>
+      <p>O caso médio ocorre quando a entrada está em ordem aleatória.</p>
+      <ul id="ListaCasos">
+        <li>Complexidade Pior Caso: O(n log2 n)</li>
+        <li>Complexidade Caso Médio: O(n log2 n)</li>
+        <li>Complexidade Melhor Caso: O(n log2 n)</li>
+      </ul>
+      <img src="img/MergeSort_Ex.png" alt="" srcset="">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/funcao.js"></script>
+  <script src="js/chart1.js"></script>
+</body>
+
+</html>
