@@ -1,5 +1,5 @@
 const sideBar = document.getElementById('sidebar'),
-showMenu = document.querySelector('#btn-menu'),
+showMenu = document.querySelector('#btn-menu span'),
 subMenu = document.querySelectorAll('.submenu'),
 btnsExpand = document.querySelectorAll('.expand span'),
 btnLad = document.querySelector('#btn-lad span');
@@ -11,8 +11,8 @@ showMenu.addEventListener("click", ()=>{
     } else {
         showMenu.innerText = "menu";
     }
-    showMenu.classList.toggle("show");
-    showMenu.parentElement.nextElementSibling.firstChild.classList.toggle("show");
+    showMenu.parentElement.classList.toggle("show");
+    sideBar.classList.toggle("show");
 })
 
 for(const btnExpand of btnsExpand) {
