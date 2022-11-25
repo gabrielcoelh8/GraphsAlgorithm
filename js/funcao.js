@@ -1,7 +1,8 @@
 const sideBar = document.getElementById('sidebar'),
 showMenu = document.querySelector('#btn-menu'),
 subMenu = document.querySelectorAll('.submenu'),
-btnsExpand = document.querySelectorAll('.expand span');
+btnsExpand = document.querySelectorAll('.expand span'),
+btnLad = document.querySelector('#btn-lad span');
 
 
 showMenu.addEventListener("click", ()=>{
@@ -20,5 +21,13 @@ for(const btnExpand of btnsExpand) {
         btnExpand.parentElement.classList.toggle("clicked");
     })
 }
+
+btnLad.addEventListener("click", ()=>{
+    if(btnLad.innerText == "keyboard_double_arrow_right"){
+        btnLad.innerText = "keyboard_double_arrow_left";
+    } else {
+        btnLad.innerText = "keyboard_double_arrow_right";
+    }
+})
 
 
