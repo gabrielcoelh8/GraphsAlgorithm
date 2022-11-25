@@ -193,8 +193,8 @@
   }
 
   .chart {
-    width: 85vh;
-    height: 85vh;
+    width: 75vh;
+    height: 75vh;
   }
   
   .container {
@@ -207,8 +207,9 @@
   }
 
   .buttons {
-    width: 250px;
+    width: fit-content;
     height: 160px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -230,10 +231,10 @@
     cursor: pointer;
     display: inline-flex;
     font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     justify-content: center;
-    line-height: 1.25;
+    line-height: 1.0;
     margin: 0;
     max-height: 2.5rem;
     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
@@ -248,13 +249,13 @@
   }
 
   #btn-melhor{
-   background-color:#1077B3; 
+   background-color:#A346EA; 
   }
   #btn-medio{
-    background-color:#1496E0;
+    background-color:#8200E6;
   }
   #btn-pior{
-    background-color: #094161;
+    background-color: #6500B3;
   }
   
   .button-5:hover,
@@ -297,6 +298,7 @@
 .lateral  div{
     margin: 8px;
 }
+
 
 #btn-lad {
     display: flex;

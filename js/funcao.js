@@ -2,7 +2,8 @@ const sideBar = document.getElementById('sidebar'),
 showMenu = document.querySelector('#btn-menu span'),
 subMenu = document.querySelectorAll('.submenu'),
 btnsExpand = document.querySelectorAll('.expand span'),
-btnLad = document.querySelector('#btn-lad span');
+btnLad = document.querySelector('#btn-lad span'), 
+lateral = document.querySelector('.lateral');
 
 
 showMenu.addEventListener("click", ()=>{
@@ -28,6 +29,15 @@ btnLad.addEventListener("click", ()=>{
     } else {
         btnLad.innerText = "keyboard_double_arrow_right";
     }
+
+    lateral.classList.toggle("show");
 })
 
 
+window.addEventListener('load', onDocumentKeyUpPostMessageToParent);
+
+function onDocumentKeyUpPostMessageToParent(e) {
+    let msg = "teste!!!";   
+
+    window.postMessage( msg, '*');
+}
