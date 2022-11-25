@@ -1,7 +1,9 @@
 const sideBar = document.getElementById('sidebar'),
-showMenu = document.querySelector('#btn-menu'),
+showMenu = document.querySelector('#btn-menu span'),
 subMenu = document.querySelectorAll('.submenu'),
-btnsExpand = document.querySelectorAll('.expand span');
+btnsExpand = document.querySelectorAll('.expand span'),
+btnLad = document.querySelector('#btn-lad'),
+lateral = document.querySelector('.lateral');
 
 
 showMenu.addEventListener("click", ()=>{
@@ -10,8 +12,8 @@ showMenu.addEventListener("click", ()=>{
     } else {
         showMenu.innerText = "menu";
     }
-    showMenu.classList.toggle("show");
-    showMenu.parentElement.nextElementSibling.firstChild.classList.toggle("show");
+    showMenu.parentElement.classList.toggle("show");
+    sideBar.classList.toggle("show");
 })
 
 for(const btnExpand of btnsExpand) {
@@ -20,5 +22,15 @@ for(const btnExpand of btnsExpand) {
         btnExpand.parentElement.classList.toggle("clicked");
     })
 }
+
+btnLad.addEventListener('click', ()=>{
+    lateral.classList.toggle("show");
+
+    if(btnLad.innerText == "keyboard_double_arrow_right"){
+        btnLad.innerText = "keyboard_double_arrow_left";
+    } else {
+        btnLad.innerText = "keyboard_double_arrow_right";
+    }
+})
 
 
