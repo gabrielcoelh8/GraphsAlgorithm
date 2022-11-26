@@ -1,6 +1,7 @@
 const linhas = document.querySelectorAll('.row');
+let received;
 
-window.onload = (event) => { pushTable(bubbleSort); };
+window.onload = (e) => { pushTable(bubbleSort); };
 
 let bubbleSort = [
     [0.000001, 0.000417, 0.00034, 0.000964],            //melhor
@@ -13,6 +14,12 @@ let bubbleSort = [
     [0.001085, 0.103675, 265.357151, 435.939282]        //pior
 ];
 
+window.addEventListener("message", (e)=> {
+    received = eval(e.data);
+    console.log(received);
+    document.cookie = "op=bubbleSort; Secure";
+});
+
 function pushTable(dados) {
     let cont = 0;
     linhas.forEach(linha => {
@@ -22,13 +29,22 @@ function pushTable(dados) {
             linha.appendChild(td);
         })
         cont++;
-    })
+    })  
 }
 
-document.addEventListener('message', onMessage);
 
-function onMessage(e) {
-    const msg = e;  // `e.data` is the same as the `msg` object in the iframe page's script.
-    
-    console.log(msg);
-}
+function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+console.log(getCookie("op"));

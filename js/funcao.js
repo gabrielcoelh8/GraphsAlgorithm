@@ -3,7 +3,8 @@ showMenu = document.querySelector('#btn-menu span'),
 subMenu = document.querySelectorAll('.submenu'),
 btnsExpand = document.querySelectorAll('.expand span'),
 btnLad = document.querySelector('#btn-lad span'), 
-lateral = document.querySelector('.lateral');
+lateral = document.querySelector('.lateral'),
+teste = document.querySelector('#btnTeste');
 
 
 showMenu.addEventListener("click", ()=>{
@@ -29,15 +30,11 @@ btnLad.addEventListener("click", ()=>{
     } else {
         btnLad.innerText = "keyboard_double_arrow_right";
     }
-
     lateral.classList.toggle("show");
 })
 
+teste.addEventListener('click', ()=>{
+    const meuIframe = document.getElementById('iframe');
+    meuIframe.contentWindow.postMessage('bubbleSort', '*');
+})
 
-window.addEventListener('load', onDocumentKeyUpPostMessageToParent);
-
-function onDocumentKeyUpPostMessageToParent(e) {
-    let msg = "teste!!!";   
-
-    window.postMessage( msg, '*');
-}
