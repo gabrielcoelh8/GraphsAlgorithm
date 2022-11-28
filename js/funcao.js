@@ -4,7 +4,8 @@ subMenu = document.querySelectorAll('.submenu'),
 btnsExpand = document.querySelectorAll('.expand span'),
 btnLad = document.querySelector('#btn-lad span'), 
 lateral = document.querySelector('.lateral'),
-teste = document.querySelector('#btnTeste');
+meuIframe = document.getElementById('iframe'),
+btnsTab = document.querySelectorAll('.btnTable');
 
 
 showMenu.addEventListener("click", ()=>{
@@ -33,8 +34,12 @@ btnLad.addEventListener("click", ()=>{
     lateral.classList.toggle("show");
 })
 
-teste.addEventListener('click', ()=>{
-    const meuIframe = document.getElementById('iframe');
-    meuIframe.contentWindow.postMessage('bubbleSort', '*');
-})
-
+btnsTab.forEach(btn => {
+    btn.addEventListener("click", (e) =>{
+        const data = btn.getAttribute('id');
+    
+        meuIframe.onload = () => {
+            meuIframe.contentWindow.postMessage(data, '*');
+        }
+    })
+});
