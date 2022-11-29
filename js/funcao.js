@@ -1,11 +1,12 @@
 const sideBar = document.getElementById('sidebar'),
 showMenu = document.querySelector('#btn-menu span'),
 subMenu = document.querySelectorAll('.submenu'),
+subItems = document.querySelectorAll('.subitem'),
 btnsExpand = document.querySelectorAll('.expand span'),
 btnLad = document.querySelector('#btn-lad span'), 
 lateral = document.querySelector('.lateral'),
 meuIframe = document.getElementById('iframe'),
-btnsTab = document.querySelectorAll('.btnTable');
+btnsSub = document.querySelectorAll('.btnSub');
 
 
 showMenu.addEventListener("click", ()=>{
@@ -21,9 +22,16 @@ showMenu.addEventListener("click", ()=>{
 for(const btnExpand of btnsExpand) {
     btnExpand.parentElement.parentElement.addEventListener("click", ()=>{
         btnExpand.parentElement.parentElement.nextElementSibling.classList.toggle("show");
-        btnExpand.parentElement.classList.toggle("clicked");
+        btnExpand.parentElement.parentElement.classList.toggle("clicked");
     })
 }
+
+subItems.forEach(subItem => {
+    subItem.addEventListener('click', ()=>{
+        subItems.forEach(subItem =>{subItem.classList.remove('selected');})
+        subItem.classList.add('selected');
+    })
+});
 
 btnLad.addEventListener("click", ()=>{
     if(btnLad.innerText == "keyboard_double_arrow_right"){
@@ -34,10 +42,11 @@ btnLad.addEventListener("click", ()=>{
     lateral.classList.toggle("show");
 })
 
-btnsTab.forEach(btn => {
+btnsSub.forEach(btn => {
     btn.addEventListener("click", (e) =>{
-        const data = btn.getAttribute('id');
-    
+        const data = btn.parentElement.parentElement.parentElement.getAttribute('id');
+        console.log(data);
+
         meuIframe.onload = () => {
             meuIframe.contentWindow.postMessage(data, '*');
         }

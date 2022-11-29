@@ -107,6 +107,10 @@
       letter-spacing: 1px;
       background-color: hsla(0, 0%, 13%, 0.75);
   }
+  .text-menu:hover{
+      cursor: pointer;
+      background-color: hsl(0, 0%, 9%);
+  }
 
   .option {
       line-height: 3;
@@ -126,7 +130,9 @@
   .option span {
       margin: 3px;
   }
-
+  .option.clicked{
+      background-color: rgba(129, 20, 230, 0.904);
+  }
   span.material-symbols-outlined {
       cursor: pointer;
   }
@@ -140,7 +146,7 @@
   .expand {
       transition: transform 0.3s;
   }
-  .expand.clicked{
+  .option.clicked .expand{
     transform: rotate(-180deg);
   }
   
@@ -155,8 +161,8 @@
       opacity: 1;
       cursor: default;
   }
-
-  .subitem {
+  
+  .submenu .subitem{
       line-height: 25px;
       font-size: 0.75em;
       font-weight: 700;
@@ -170,9 +176,10 @@
       padding: 5px;
       cursor: default;
   }
-  .subitem:hover{
-     background-color: #202020;
+  .subitem:hover, .subitem.selected{
+     background-color: #0e0e0e;
   }
+
   .subitem span{
     cursor: pointer;
   }
@@ -255,7 +262,7 @@
     background-color:#8200E6;
   }
   #btn-pior{
-    background-color: #6500B3;
+    background-color:#6500B3;
   }
   
   .button-5:hover,
@@ -283,16 +290,43 @@
     width: fit-content;
     height: 100%;
     position: fixed;
-    right: -450px;
+    right: -460px;
     top: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    animation: onHold 2s ease-in-out infinite;
     transition: right 0.3s ease;
 }
 
+@keyframes onHold{
+    0% {
+      right: -460px;
+    }
+    50% {
+      right: -440px;
+    }
+    100%{
+      right: -460px;
+    }
+}
+
+.lateral:hover{
+    animation-play-state: paused;
+}
+
 .lateral.show {
+    animation: onShow 0.4s ease-out;
     right: 0px;
+}
+
+@keyframes onShow{
+  0% {
+    right: -460px;
+  }
+  100%{
+    right: 0px;
+  }
 }
 
 .lateral  div{
