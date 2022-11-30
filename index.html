@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/estilo.css">
-
+  <link rel="stylesheet" href="css/fundo.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Algoritmos de Ordenação</title>
@@ -20,13 +20,17 @@
     <div id="btn-menu" class="show">
       <span class="material-symbols-outlined">close</span>
     </div>
+    <div id="btn-menu2" class="show">
+      <span class="material-symbols-outlined">auto_awesome</span>
+    </div>
     
     <!--sidebar-->
     <div id="sidebar" class="show">
       <!-- topo -->
         <a href="pages/page0.html" target="iframe">
           <div class="subitem text-menu selected">
-            <span>Algoritmos de Ordenação</span>
+            <span>Página inicial</span>
+            <span class="material-symbols-outlined">home</span>
           </div>
         </a>
       <!-- introdução -->
@@ -372,6 +376,11 @@
 
   </div>
 
+  <canvas class="background"></canvas>
+  <!--https://marcbruederlin.github.io/particles.js/-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  <script src="js/particles.js"></script>
   <script type="module" src="js/funcao.js"></script>
   <script type="module" src="js/text.js"></script>
 </body>

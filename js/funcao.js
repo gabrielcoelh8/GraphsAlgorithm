@@ -16,6 +16,7 @@ showMenu.addEventListener("click", ()=>{
         showMenu.innerText = "menu";
     }
     showMenu.parentElement.classList.toggle("show");
+    showMenu.parentElement.nextElementSibling.classList.toggle("show");
     sideBar.classList.toggle("show");
 })
 

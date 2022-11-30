@@ -16,3 +16,8 @@ for (let x = 0; x < textSort.length; x++) {
     })
   }
 };
+
+let btnTopo = document.querySelector('.text-menu');
+btnTopo.addEventListener('click', ()=>{
+  textLad.innerHTML = textSort[0].text;
+})
