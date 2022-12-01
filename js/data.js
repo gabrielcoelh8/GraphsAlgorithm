@@ -93,28 +93,21 @@ textSort = [
     <img src="img/img-1.webp" alt="" srcset="">`
     },
 {
-    text: `<h2>Bubble Sort (Melhorado)</h2>
-    <p>Bubble Sort é um algoritmo de classificação comumente usado em ciência da computação.
-      Tirando o fato de que ele é conhecidamente ineficiente, sua implementação é relativamente fácil e entendê-lo
-      pode ser uma porta de entrada para o universo dos algoritmos de ordenação.
-    </p>
-    <h3>De onde vem o nome Bubble Sort? </h3>
-    <p>De uma suposta analogia do processo de ordenamento com um “bolhas emergindo em um tanque de água”.</p>
-    <h3>Como ocorre a ordenação?</h3>
-    <p>Cada elemento é comparado com os adjacentes, de maneira que a cada “passada” o maior elemento é deslocado para
-      o fim da lista.</p>
-    <p>O gráfico e tabela ao lado representa o tempo que o algoritmo Bubble Sort leva para ordenar um vetores de
-      1000,1000,50000,1000000.</p>
-    <p>O Melhor caso ocorre quando o array já está ordenado.</p>
-    <p>O pior caso da execução deste algoritmo manifesta-se quando a entrada está ordenada em ordem decrescente.</p>
-    <p>O caso médio ocorre quando a entrada está em ordem aleatória.</p>
-    <p>Tempo de execução do algoritmo Bubble Sort é O(n2)</p>
-    <ul id="ListaCasos">
-      <li>Complexidade Melhor Caso: O(n)</li>
-      <li>Complexidade Caso Médio: O(n2)</li>
-      <li>Complexidade Pior Caso: O(n2)</li>
+    text: `
+    <div>
+    <p><span style="font-weight: 400;">Assim como o movimento suave de bolhas de ar emergindo do fundo &agrave; superf&iacute;cie da &aacute;gua, cada elemento de um dado </span><i><span style="font-weight: 400;">array </span></i><span style="font-weight: 400;">&eacute; movido at&eacute; seu fim em cada itera&ccedil;&atilde;o. Por esse motivo, chama-se </span><b>Bubble Sort</b><span style="font-weight: 400;"> (ordena&ccedil;&atilde;o em bolha, em tradu&ccedil;&atilde;o livre).</span></p>
+    <p><span style="font-weight: 400;">No melhor caso, o algoritmo executa 𝓝 opera&ccedil;&otilde;es relevantes, onde 𝓝 representa o n&uacute;mero de elementos do </span><i><span style="font-weight: 400;">array</span></i><span style="font-weight: 400;">. No pior caso, s&atilde;o feitas 𝓝</span><sup><b>2</b></sup><span style="font-weight: 400;"> opera&ccedil;&otilde;es. A complexidade desse algoritmo &eacute; de ordem quadr&aacute;tica. Por isso, ele n&atilde;o &eacute; recomendado em quantidade elevada de dados.</span></p>
+    <ul>
+    <li><span style="font-weight: 400;">Pior caso: </span><b>O(n</b><sup><b>2</b></sup><b>)</b></li>
+    <li><span style="font-weight: 400;">M&eacute;dio caso: </span><b>O(n</b><sup><b>2</b></sup><b>)</b></li>
+    <li><span style="font-weight: 400;">Melhor caso: </span><b>O(n)</b></li>
     </ul>
-    <img src="img/burbbleSort_Ex.png" alt="" srcset="">`
+    </div>
+
+    <div class="img">
+    <img src="img/burbbleSort_Ex.png" alt="" srcset="">
+    </div>
+    `
     },
 {
     text: `<h2>Selection Sort</h2>`

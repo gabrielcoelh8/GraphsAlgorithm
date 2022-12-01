@@ -384,28 +384,37 @@
     text-align: justify;
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow-y: auto;
     backdrop-filter: blur(15px);
     margin: 0;
 }
 
-#text-lad img{
+#text-lad div img{
     width: 100%;
-    margin: 15px;
+}
+#text-lad div.img{
+    padding: 30px;
 }
 
-#text-lad h2{
+#text-lad h2, #text-lad h3{
     color: #DA1E37;
     font-weight: bold;
+    text-align: center;
+}
+
+#text-lad div.code{
+    width: fit-content;
+    padding: 50px;
+    background-color: #4143456b;
 }
 
 #text-lad::-webkit-scrollbar {
   width: 0;
 }
 
-#ListaCasos{
-  list-style: circle;
-  padding-left: 30px;
+#text-lad li{
+  list-style: none;
 }
 
 /*
