@@ -390,11 +390,16 @@
     margin: 0;
 }
 
+#text-lad div{
+  margin-bottom: 20px;
+}
+
 #text-lad div img{
     width: 100%;
 }
+
 #text-lad div.img{
-    padding: 30px;
+    padding: 10px;
 }
 
 #text-lad h2, #text-lad h3{
@@ -405,8 +410,9 @@
 
 #text-lad div.code{
     width: fit-content;
-    padding: 50px;
-    background-color: #4143456b;
+    font-size: 15px;
+    padding: 30px;
+    background-color: #d2d5d86b;
 }
 
 #text-lad::-webkit-scrollbar {
@@ -414,7 +420,7 @@
 }
 
 #text-lad li{
-  list-style: none;
+  list-style:decimal;
 }
 
 /*
