@@ -390,7 +390,10 @@
     backdrop-filter: blur(15px);
     margin: 0;
 }
-
+#text-lad p{
+  cursor: text;
+  user-select: text;
+}
 #text-lad div{
   margin-bottom: 20px;
 }
@@ -414,6 +417,7 @@
     font-size: 13px;
     padding: 30px;
     background-color: #d2d5d86b;
+    user-select: text;
 }
 
 #text-lad::-webkit-scrollbar {
